@@ -1,0 +1,374 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ol {
+  list-style: none;
+}
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  line-height: normal;
+  color: #333;
+}
+.recipe {
+  margin: 2rem 0.69rem;
+}
+@media (min-width: 767px) {
+  .recipe {
+    margin: 2rem 8.2vw;
+  }
+}
+@media (min-width: 1023px) {
+  .recipe {
+    margin: 3.25rem 14.63rem;
+  }
+}
+@media (min-width: 1439px) {
+  .recipe {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 3.25rem 14.63rem;
+  }
+}
+.recipe__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Playfair Display";
+  line-height: normal;
+  color: #000;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 1439px) {
+  .recipe__title {
+    font-size: 3rem;
+  }
+}
+.recipe__description {
+  display: flex;
+  align-items: start;
+  max-width: 21rem;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.75rem;
+  font-family: "Montserrat";
+  line-height: normal;
+  color: #4f4f4f;
+  margin-bottom: 1.8rem;
+}
+@media (min-width: 1439px) {
+  .recipe__description {
+    max-width: 38rem;
+    font-size: 0.875rem;
+    margin-bottom: 2.8rem;
+  }
+}
+.recipe__description img {
+  margin-right: 0.75rem;
+  transform: translate(2px, 3px);
+  width: 0.8125rem;
+}
+.recipe__image {
+  width: 100%;
+  min-width: 22rem;
+  min-height: 12.36431rem;
+  background: url("../photo1.png") lightgray 50% / cover no-repeat;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 767px) {
+  .recipe__image {
+    min-height: 18.36431rem;
+    background-size: cover;
+  }
+}
+@media (min-width: 1439px) {
+  .recipe__image {
+    min-height: 29.375rem;
+    margin-bottom: 3rem;
+  }
+}
+.recipe__source {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 150%;
+  color: #bdbdbd;
+}
+@media (min-width: 1439px) {
+  .recipe__source {
+    font-size: 1rem;
+    margin-top: 4.31rem !important;
+  }
+  .recipe__source br {
+    display: none;
+  }
+}
+@media (min-width: 1439px) {
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-side {
+    width: 54%;
+  }
+}
+.yields {
+  display: flex;
+  flex-wrap: wrap;
+  order: 7;
+}
+@media (min-width: 1439px) {
+  .yields {
+    flex-direction: column;
+  }
+}
+.yields__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  margin-right: 2.5rem;
+}
+@media (min-width: 1439px) {
+  .yields__item {
+    text-align: left;
+  }
+}
+.yields__item .orange {
+  color: orange;
+}
+.yields__item.first-child {
+  width: 100%;
+}
+@media (min-width: 1439px) {
+  .yields__item.first-child {
+    width: auto;
+  }
+}
+.yields__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: normal;
+  color: #bdbdbd;
+}
+.yields__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: normal;
+  color: #333;
+}
+.yields__icon {
+  font-size: 1.0625rem;
+  margin-right: 0.25rem;
+}
+@media (min-width: 1439px) {
+  .yields__icon {
+    font-size: 2.125rem;
+  }
+}
+.yields__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: normal;
+  color: #333;
+}
+.ingredients__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  font-family: "Playfair Display", serif;
+  line-height: normal;
+  color: #333;
+  margin-bottom: 0.81rem;
+}
+@media (min-width: 1439px) {
+  .ingredients__title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+.ingredients__recipe {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+  line-height: normal;
+  color: #333;
+  margin-bottom: 1.44rem;
+}
+@media (min-width: 1439px) {
+  .ingredients__recipe {
+    font-size: 1.125rem;
+    margin-bottom: 1.94rem;
+  }
+}
+.ingredients__recipe.second-child {
+  margin-top: 2.44rem;
+}
+@media (min-width: 1439px) {
+  .ingredients__recipe.second-child {
+    margin-top: 2.38rem;
+  }
+}
+.ingredients__list {
+  margin-bottom: 1.88rem;
+}
+.ingredients__checkbox {
+  width: 1.3125rem;
+  height: 1.3125rem;
+  border-radius: 0.25rem;
+  border: 1px solid #828282;
+}
+.ingredients__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5625rem;
+  color: #333;
+  margin-bottom: 0.19rem;
+}
+@media (min-width: 1439px) {
+  .ingredients__label {
+    font-size: 1rem;
+    margin-left: 1.09rem;
+  }
+}
+.ingredients__label span {
+  font-weight: bold;
+}
+.ingredients__label span.italic {
+  font-style: italic;
+  font-weight: 500;
+}
+.instructions__title {
+  margin-bottom: 1.62rem;
+}
+.instructions .instruction {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.19rem;
+}
+.instructions .instruction p:nth-child(1) {
+  padding: 0.125rem 0.81rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.375rem;
+  margin-right: 0.94rem;
+  background: #f2994a;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+  line-height: normal;
+  color: #FFF;
+}
+@media (min-width: 1439px) {
+  .instructions .instruction p:nth-child(1) {
+    width: 2.25rem;
+    height: 2.25rem;
+    padding-bottom: 2rem;
+  }
+}
+.instructions .instruction p:nth-child(2) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 150%;
+  color: #000;
+}
+.instructions .instruction p span {
+  font-weight: 700;
+}
+footer {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: normal;
+  color: #828282;
+  text-align: center;
+  padding: 1.5rem 2.75rem;
+}
+@media (min-width: 1439px) {
+  footer {
+    font-size: 1rem;
+  }
+}
+footer span {
+  font-weight: 700;
+}
